@@ -3,9 +3,13 @@
 
 {% block content %}
 
-<section>
-<h1>Hello World</h1>
-</section>
-
+    <section id = "catalog">
+        {% for item in procreators %}
+            <h1>{{item.title}}</h1>
+            {% for model in item.models %}
+                <h2>{{ model.title }}</h2>
+            {% endfor %}
+        {% endfor %}
+    </section>
 
 {% endblock %}
