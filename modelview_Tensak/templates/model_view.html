@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="row align-items-center">
+    <div class="col-md-8" style="margin: 0 auto">
+        <div class="title">
+            {{model.title}}
+        </div>
+        <div class="dishphoto">
+            <p class="leftimg"> <img src="{{ model.photo.url }}" class="img-fluid"></p>
+        </div>
+        <div class="descriptiondish" style="height: 100%">
+            <div>
+                <span >{{ model.description }}</span>
+            </div>
+        </div>
+        <div class="pricedish">
+            <p class="centre"> {{ model.price }}&#8364</p>
+        </div>
+        <div class="menubutton">
+            <p class="centre"> <button type="button" class="btn" style="background-color: #000000; color: #ffffff; width: 400px"><b>Замовити</b></button></p>
+        </div>
+    </div>
+    </div>
+{% endblock %}
+

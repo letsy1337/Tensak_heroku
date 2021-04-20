@@ -3,25 +3,159 @@
     text-align: center;
 }
 
+#footer a {
+    color: #ffffff;
+}
+
+#footer a:hover {
+    color: #000000;
+}
+
 #footer {
-    position: relative;
-    background-color: #0d6efd;
+    position: fixed;
+    left: 0; bottom: 0;
     color: #fff;
     font-size: 12px;
 }
 
-#footer a {
-    color: #ff0;
+hr {
+    border: none;
+    background-color: #000000;
+    color: #000000;
+    height: 15px;
 }
 
-#footer a:hover {
-    color: #f00;
-}
-
-#footer
-{
+.d-block {
     padding: 20px;
-    position: fixed;
-    left: 0; bottom: 0;
     width: 100%;
+    max-height: 500px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+.carusel {
+    margin: 0 auto;
+}
+
+.catalog {
+    padding: 10px;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+img {
+    border: 10px groove #ffffff;
+}
+
+.bui {
+    margin: 0 auto;
+}
+
+.dishphoto {
+    margin: 0 auto;
+}
+
+.dishspecialphoto {
+    max-height: 600px;
+}
+
+#columnscatalog {
+    width: 30%;
+    height: 100%;
+    border: 4px inset #000000;
+    margin-bottom: 30px;
+}
+
+#columnssalecatalog {
+    width: 80%;
+    height: 100%;
+    border: 4px inset #000000;
+    margin-bottom: 15px;
+}
+
+.col-4 {
+    margin:0 auto;
+    max-height: 100%;
+}
+
+.title {
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.descriptionmodel {
+    text-align: center;
+    line-height: 26px;
+    font-size: 23px;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.descriptionsalemodel {
+    line-height: 33px;
+    font-size: 30px;
+    height: 100%;
+    display: table-cell;
+    margin: 0 auto;
+}
+
+.pricemodel {
+    width: 100%;
+    font-size: 20px;
+    height: 100%;
+}
+
+.pricesalemodel {
+    position: relative;
+    width: 100%;
+    font-size: 40px;
+    height: 100%;
+    padding: 20px;
+    top: 5%;
+
+}
+
+.leftimg {
+    float:left;
+    margin: 7px 7px 7px 0;
+}
+
+.buttonsalemodel {
+    width:20%
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230d6efd'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230d6efd'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-next:hover {
+    color: #000000;
+}
+
+a {
+   color: #000000;
 }

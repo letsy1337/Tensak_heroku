@@ -21,7 +21,8 @@ from Tensak import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('main_Tensak.urls'))
+    path('', include('main_Tensak.urls')),
+    path('model/', include('modelview_Tensak.urls'))
 ]
 
 if settings.DEBUG:
