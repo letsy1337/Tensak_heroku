@@ -1,0 +1,1 @@
+web: gunicorn Tensak.wsgi --log-file -
