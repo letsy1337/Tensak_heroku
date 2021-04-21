@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+
+
+{% block content%}
+    <div class="container">
+        <div class="section-title text-center">
+            <h1>Войти в систему</h1>
+        </div>
+        <br><br>
+        <form action="" method="post">
+            {% csrf_token %}
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="centre">Имя пользователя</p>
+                    <p class="centre">{{ form.username }}</p>
+                </div>
+                <div class="col-md-6" style="margin: 0 auto">
+                    <p class="centre">Пароль</p>
+                    <p class="centre">{{ form.password }}</p>
+                </div>
+                <input type="submit" class="btn-primary centre" style="width: 20%; margin: 0 auto; background-color: #000000; color: #ffffff; border-color: #000000" value="Войти">
+            </div>
+        </form>
+    </div>
+{% endblock%}
+

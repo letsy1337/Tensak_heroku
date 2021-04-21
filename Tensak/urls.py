@@ -18,11 +18,15 @@ from django.urls import path, include
 from Tensak.views import hello
 from django.conf.urls.static import static
 from Tensak import settings
+from auth_Tensak.views import login_view, logout_view, register_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('main_Tensak.urls')),
-    path('model/', include('modelview_Tensak.urls'))
+    path('model/', include('modelview_Tensak.urls')),
+    path('login/', login_view, name='login'),
+    path('logout/', logout_view, name='logout'),
+    path('register/', register_view, name='register'),
 ]
 
 if settings.DEBUG:

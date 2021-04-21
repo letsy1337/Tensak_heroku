@@ -6,16 +6,16 @@ import os
 
 class UserGuideRequestsForm(forms.ModelForm):
     user_name = forms.CharField(max_length=50, widget=forms.TextInput(attrs={'type': 'text', 'id': 'name', 'class': 'form-control',
-                                                                             'placeholder': 'Ім\'я', 'required': 'required'}))
+                                                                             'placeholder': 'Имя', 'required': 'required'}))
     user_email = forms.EmailField(widget=forms.TextInput(attrs={'type': 'email', 'id': 'email',
                                                                 'class': 'form-control',
-                                                                'placeholder': 'Електронна пошта',
+                                                                'placeholder': 'Електронная почта',
                                                                 'required': 'required'}))
     user_number = forms.DecimalField(max_digits=10, decimal_places=0, widget=forms.NumberInput(attrs={'type': 'text', 'id': 'name', 'class': 'form-control',
                                                                                                       'placeholder': 'Номер телефона', 'required': 'required'}))
     user_message = forms.CharField(max_length=200, widget=forms.Textarea(
         attrs={'name': 'message', 'id': 'message', 'class': 'form-control',
-               'rows': '1', 'placeholder': 'Повідомлення',
+               'rows': '1', 'placeholder': 'Сообщение',
                'required': 'required'}))
 
     class Meta():

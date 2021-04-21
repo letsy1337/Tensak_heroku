@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
-from .models import Procreator, Model, Banners
+from .models import Procreator, Model, Banners, UsersGuideRequests
 from .forms import UserGuideRequestsForm, ProcreatorAddForm, ModelAddForm
+from django.core.paginator import Paginator
 
 def main(request):
     if request.method == 'POST':
@@ -42,3 +43,10 @@ def addModel(request):
     models_add = ModelAddForm()
     return render(request, 'modeladd.html', context={'modeladd': models_add
                                                      })
+
+def guiderequest(request):
+    requests = UsersGuideRequests.objects.filter(is_processed=False).order_by('send_date')
+    paginator = Paginator(requests, 10)
+    page = request.GET.get('page')
+    requests_page = paginator.get_page(page)
+    return render(request, 'guide_requests.html', context={'items': requests_page})

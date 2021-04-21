@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main_Tensak',
-    'modelview_Tensak'
+    'modelview_Tensak',
+    'auth_Tensak'
 ]
 
 MIDDLEWARE = [
