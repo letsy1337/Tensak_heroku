@@ -105,7 +105,7 @@ DATABASES = {
 
 import dj_database_url
 db = dj_database_url.config()
-DATABASES['default'].update(db)
+DATABASES['default'] = dj_database_url.config()
 
 
 # Password validation
